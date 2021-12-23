@@ -44,4 +44,5 @@ function openModal(e) {
 function closeModal(e) {
   console.log(e.code)
   if (e.code === 'Escape') instance.close()
+  refs.gallaryEl.removeEventListener('click', openModal)
 }
